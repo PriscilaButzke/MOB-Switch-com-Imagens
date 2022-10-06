@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/txtTitulo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Engorde o gato"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"
+    android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+        <ImageView
+            android:id="@+id/imgfoto"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/foto2" />
+<!--
+        <TextView
+            android:id="@+id/txtinformacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textSize="20dp" />
+-->
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="No"
+            android:textOn="Yes"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtinformacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:text=""
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
+<!--
+    <Button
+        android:id="@+id/btfoto1"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exibir foto 1"
+        />
+    <Button
+        android:id="@+id/btfoto2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exibir foto 2"
+        android:layout_below="@id/btfoto1"/>
+        -->
+</RelativeLayout>
